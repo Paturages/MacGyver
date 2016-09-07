@@ -348,7 +348,7 @@ angular.module('Mac').provider('popover', function () {
             if (diff) {
               var tip = angular.element(currentPopover[0].getElementsByClassName('tip'));
               // calculatedOffset.top -= diff;
-              var tipOffset = +tip.css('margin-tip').replace('px', '');
+              var tipOffset = +tip.css('margin-top').replace('px', '');
               tip.css('margin-top', tipOffset + diff);
             }
           }
